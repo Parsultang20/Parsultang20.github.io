@@ -581,7 +581,7 @@ a.menuA:hover {
 }
 /* Иконка названием сайта */
 #wtf i {
-    color:#fff ;
+    color:orange;
 }
 #wtf {
   font-size: 3em;
@@ -1861,20 +1861,62 @@ height: 300PX;
   .text {
     width: 87%;
   }
+  .question {
+    height: 200px;
+
+  }
+
+  #nadpis {
+    color: #E32020;
+    font-size: 15px;
+  }
+  .questions span {     /* Выделяю вопросы */
+    color: #212121;
+    font-size: 20px;
+  }
+   .questions font {    /* Выделяю ответы */
+    color: #224A97;
+    text-align: justify;
+    font-size: 15px;
+  }
+  .questions i {             /* Выделяю в этом div'e иконки */
+    font-size: 50px;
+    color: #212121;
+
+  }
+
 }
 
 
 @media screen and (min-width: 768px) and (max-width: 801px) {
   .FAQ {
-    width: 95%;
-    height: 2700px;
+    width: 85%;
+    height: 2000px;
 
   }
   .text {
     width: 85%;
   }
   .question {
-    height: 300px;
+    height: 200px;
+
+  }
+  #nadpis {
+    color: #E32020;
+    font-size: 15px;
+  }
+  .questions span {     /* Выделяю вопросы */
+    color: #212121;
+    font-size: 20px;
+  }
+   .questions font {    /* Выделяю ответы */
+    color: #224A97;
+    text-align: justify;
+    font-size: 15px;
+  }
+  .questions i {             /* Выделяю в этом div'e иконки */
+    font-size: 50px;
+    color: #212121;
 
   }
 }
@@ -1883,16 +1925,32 @@ height: 300PX;
 
 @media screen and (min-width: 566px) and (max-width: 767px) {
   .FAQ {
-    width: 95%;
-    height: 3300px;
+    width: 80%;
+    height: 2050px;
 
   }
   .text {
     width: 85%;
   }
   .question {
-    height: 400px;
-
+    height: 200px;
+  }
+  #nadpis {
+    color: #E32020;
+    font-size: 15px;
+  }
+  .questions span {     /* Выделяю вопросы */
+    color: #212121;
+    font-size: 20px;
+  }
+   .questions font {    /* Выделяю ответы */
+    color: #224A97;
+    text-align: justify;
+    font-size: 15px;
+  }
+  .questions i {             /* Выделяю в этом div'e иконки */
+    font-size: 50px;
+    color: #212121;
   }
 }
 
@@ -1900,8 +1958,8 @@ height: 300PX;
 
 @media screen and (min-width: 490px) and (max-width: 565px) {
   .FAQ {
-    width: 95%;
-    height: 2700px;
+    width: 80%;
+    height: 1700px;
 
   }
   .text {
@@ -1916,16 +1974,35 @@ height: 300PX;
 
 @media screen and (min-width: 380px) and (max-width: 489px) {
   .FAQ {
-    width: 95%;
-    height: 4150px;
+    width: 70%;
+    height: 2000px;
 
   }
   .text {
-    width: 75%;
+    width: 83%;
   }
   .question {
-    height: 500px;
-
+    height: 200px;
+  }
+  #nadpis {
+    color: #E32020;
+    font-size: 9px;
+  }
+  .questions span {     /* Выделяю вопросы */
+    color: #212121;
+    font-size: 14px;
+  }
+   .questions font {    /* Выделяю ответы */
+    color: #224A97;
+    text-align: justify;
+    font-size: 9px;
+  }
+  .questions i {             /* Выделяю в этом div'e иконки */
+    font-size: 30px;
+    color: #212121;
+  }
+  .questions {
+    height: 2000px;
   }
 }
 
@@ -1933,7 +2010,7 @@ height: 300PX;
 @media screen and (min-width: 340px) and (max-width: 379px) {
   .FAQ {
     width: 95%;
-    height: 4000px;
+    height: 1700px;
 
   }
   .text {
@@ -2460,83 +2537,156 @@ height: 300PX;
 
 
 
-
-
-
-/* Страница продукта  */
-.MainContentProduct {
+/*  Страница продукта */
+.prodContBody {
   width: 100%;
-  height: 1000px;
+  height: 1600px;
+background-color: white;
+padding-top: 20px;
+
 }
-.ProductContent {
-    width: 60%;
-    height: 700px;
-  /* border: 1px solid black; */
-    margin: auto;
-    margin-top: 100px;
+.prodCont {
+  width: 64%;
+  height: 1300px;
+  margin: auto;
+  /* border: 1px dashed black; */
+   margin-top: 40px;
 }
-.imgProduct {
+.imgContTovar {
   width: 50%;
-  height: 100%;
-/* border-right: 1px solid black; */
+  height: 530px;
+  /* border: 1px solid red; */
   float: left;
 }
-.imgTextSell {
+.imgContTovar img {
+  width: 100%;
+  /* border: 1px solid black; */
+
+}
+.TextContTovar {
   width: 50%;
-  height: 100%;
+  height: 530px;
+  /* border: 1px solid green; */
+  float: left;
+}
+.TextContTovar h3 {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 50px;
+  font-weight:lighter
+}
+.TextContTovar h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 30px;
+  font-weight:lighter
+}
+.DivFormBallon {
+  width: 80%;
+  height: 320px;
+/* border: 1px dashed green; */
+  margin: auto;
+  padding-top: 40px;
+}
+.DivFormBallon input {
+  width: 200px;
+  margin: 5px;
+  padding: 5px;
+  margin-left: 70px;
+  margin-top: 6px;
+}
+#notInput {
+  width: 50px;
+  margin-top: 30px;
+}
+.DivFormBallon button {
+  width: 50%;
+  height: 40px;
+  margin-top: 25px;
+  margin-left: 25%;
+  background-color: orange;
+  border: 0;
+  outline: none;
+}
+.imgContTovarDown {
+  width: 50%;
+  height:530px;
+  /* border: 1px dashed orange; */
+  /* background-color: red; */
+  float: left;
+}
+.TextContTovarDown {
+  width: 50%;
+  height:530px;
+    /* border: 1px dashed blue; */
+  /* background-color: green; */
+  float: left;
+}
+.DopImgCont {
+  width: 20%;
+  height: 120px;
+  border: 1px solid grey;
+  float: left;
+  margin-left: 4%;
+  margin-top: 10px;
+}
+.DopImgCont img {
+  width: 100%;
+}
+.imgContTovarDown h3 {
+  float: left;
+  width: 100%;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+.EveryPayDay {
+  width: 30%;
+  height: 220px;
   border: 1px solid black;
   float: left;
-  text-align: center;
-  padding: 40px;
+  margin-left: 2.5%;
 }
-.imgTextSell p {
-  margin-top: 100px;
+.EveryPayDay img {
+  width: 100%;
+}
+.EveryPayDay h3 {
+  font-size: 15px;
+margin-top: 10px;
+margin-bottom: 0px;
+}
+.EveryPayDay button {
+  margin-top: 34px;
+  width: 100%;
+  height: 40px;
+  box-sizing: content-box;
+  border: 1px solid black;
+  outline: 0;
+  margin-left: -1px;
 
 }
-.imgTextSell h1 {
-  margin-top: 50px;
+#doubleSting {
+  margin-top: 17px;
 }
-.imagesTrue {
-  width: 100%;
-  height: 500px;
-}
-.imagesTrue img {
-  margin-top: 60px;
-  width: 100%;
-  height: 100%;
-}
-.imagesTrueFive {
-  width: 100%;
-  height: 150px;
-  margin-top: 60px;
-  border-top: 1px solid black;
-  /* border-right: 1px solid black; */
-}
-.textForm {
+.EveryPayDay button:hover {
+  color: white;
   background-color: red;
-  width: 350px;
 }
-.PayBlock {
-  margin-top: 92px;
-  width: 100%;
-  height: 100px;
+.TextContTovarDown {
+  padding: 40px;
+  padding-top: 10px;
+  padding-left: 70px;
 }
-.PayBlock button {
-  background-color: white;
-  width: 300px;
-  height: 60px;
-  border: 0;
-  border-top: 2px solid red;
-  /* border-radius: 20px; */
-  outline: none;
-  font-size: 20px;
+.TextContTovarDown p , .TextContTovarDown pre , .TextContTovarDown li {
+color: #414141;
 }
-.PayBlock button:hover {
-  animation-name: bakred;
-    color: white;
-    animation-duration: 0.5s;
-    animation-fill-mode: both;
-}
+
+
+
+
+
+
+
 @keyframes bakred {
 100% {
   background-color: red;
@@ -2555,6 +2705,16 @@ height: 300PX;
 }
 .FonNeBody {
   width: 100%;
+  height: 1600px;
+  /* background-image: url(img/SellIMG.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment:fixed; */
+  background-color: #fff;
+  padding-top: 50px;
+}
+.FonNeBodyB {
+  width: 100%;
   height: 900px;
   /* background-image: url(img/SellIMG.jpg);
   background-repeat: no-repeat;
@@ -2566,6 +2726,13 @@ height: 300PX;
 .menuBlokFonNeBody {
   width: 100%;
   text-align: center;
+}
+#shtrixSet {
+  /* background-color: red; */
+  float: left;
+  width: 100%;
+  text-align: center;
+  margin-top: 80px;
 }
 .CorectorBlock {
   margin-top: 90px;
@@ -2630,7 +2797,8 @@ height: 300PX;
   position: relative;
   border: 1px solid black;
   height: auto;
-
+text-align:center;
+padding-bottom: 60px;
 }
 .CorectorBlock2 img {
   width: 100%;
@@ -2639,11 +2807,10 @@ height: 300PX;
   //border: 2px solid black;
   position: absolute;
   margin-left: -50%;
-
 }
 
 .CorectorBlock2 h3 {
-  margin-top: 150%;
+  margin-top: 135%;
 }
 .CorectorBlock p {
   //margin-top: -220px;
@@ -2705,7 +2872,42 @@ height: 300PX;
   -1px 0 1px #000,
   0 -1px 1px #000;
 margin-right: 2%;
+/* margin-top: 10px; */
+background-color: rgba(0, 0, 0, 0.7);
+width: 50%;
+margin-left: 48%;
+text-align: center;
 
+}
+.fonAnbodyB h2 {
+  font-family:Pompadur;
+  font-size: 4em;
+  color:#fff;
+  text-shadow: 1px 0 1px #000,
+  0 1px 1px #000,
+  -1px 0 1px #000,
+  0 -1px 1px #000;
+margin-right: 2%;
+margin-top: 10px;
+text-align: center;
+background-color: rgba(0, 0, 0, 0.7);
+width: 50%;
+margin: auto;
+}
+.fonAnbodyA h2 {
+  font-family:Pompadur;
+  font-size: 4em;
+  color:#fff;
+  text-shadow: 1px 0 1px #000,
+  0 1px 1px #000,
+  -1px 0 1px #000,
+  0 -1px 1px #000;
+margin-right: 2%;
+margin-top: 10px;
+text-align: center;
+background-color: rgba(0, 0, 0, 0.7);
+width: 50%;
+margin: auto;
 }
 #butComp {
   margin-left: 20%;
