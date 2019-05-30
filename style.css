@@ -2770,8 +2770,23 @@ margin-bottom: 0px;
 .TextContTovarDown p , .TextContTovarDown pre , .TextContTovarDown li {
 color: #414141;
 }
+.Karta{
+  position: absolute;
+  padding-left: -10px;
+  margin-top: -28px;
+  transform: scale(0.5)
+}
 
+.Karta img{
 
+}
+
+.map1{
+  list-style:none;
+}
+.map1:before {
+    content:"►"
+}
 
 
 
